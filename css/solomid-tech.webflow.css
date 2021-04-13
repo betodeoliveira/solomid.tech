@@ -214,6 +214,114 @@ a {
   align-items: center;
 }
 
+.bolha-wrapper.bolha-1 {
+  -webkit-transform: translate(-54vw, 0px);
+  -ms-transform: translate(-54vw, 0px);
+  transform: translate(-54vw, 0px);
+}
+
+.bolha-wrapper.bolha-2 {
+  -webkit-transform: translate(36vw, 0px);
+  -ms-transform: translate(36vw, 0px);
+  transform: translate(36vw, 0px);
+}
+
+.bolha-wrapper.bolha-3 {
+  -webkit-transform: translate(-44vw, 0px);
+  -ms-transform: translate(-44vw, 0px);
+  transform: translate(-44vw, 0px);
+}
+
+.bolha-wrapper.bolha-4 {
+  -webkit-transform: translate(26vw, 0px);
+  -ms-transform: translate(26vw, 0px);
+  transform: translate(26vw, 0px);
+}
+
+.bolha-wrapper.bolha-5 {
+  -webkit-transform: translate(-34vw, 0px);
+  -ms-transform: translate(-34vw, 0px);
+  transform: translate(-34vw, 0px);
+}
+
+.bolha-wrapper.bolha-6 {
+  -webkit-transform: translate(16vw, 0px);
+  -ms-transform: translate(16vw, 0px);
+  transform: translate(16vw, 0px);
+}
+
+.bolha-wrapper.bolha-7 {
+  -webkit-transform: translate(-49vw, 0px);
+  -ms-transform: translate(-49vw, 0px);
+  transform: translate(-49vw, 0px);
+}
+
+.bolha-wrapper.bolha-8 {
+  -webkit-transform: translate(31vw, 0px);
+  -ms-transform: translate(31vw, 0px);
+  transform: translate(31vw, 0px);
+}
+
+.bolha-wrapper.bolha-9 {
+  -webkit-transform: translate(-54vw, 0px);
+  -ms-transform: translate(-54vw, 0px);
+  transform: translate(-54vw, 0px);
+}
+
+.bolha-wrapper.bolha-10 {
+  -webkit-transform: translate(36vw, 0px);
+  -ms-transform: translate(36vw, 0px);
+  transform: translate(36vw, 0px);
+}
+
+.bolha-wrapper.bolha-11 {
+  -webkit-transform: translate(-34vw, 0px);
+  -ms-transform: translate(-34vw, 0px);
+  transform: translate(-34vw, 0px);
+}
+
+.bolha-wrapper.bolha-12 {
+  -webkit-transform: translate(20vw, 0px);
+  -ms-transform: translate(20vw, 0px);
+  transform: translate(20vw, 0px);
+}
+
+.bolha-wrapper.bolha-13 {
+  -webkit-transform: translate(-35vw, 0px);
+  -ms-transform: translate(-35vw, 0px);
+  transform: translate(-35vw, 0px);
+}
+
+.bolha-wrapper.bolha-14 {
+  -webkit-transform: translate(13vw, 0px);
+  -ms-transform: translate(13vw, 0px);
+  transform: translate(13vw, 0px);
+}
+
+.bolha-wrapper.bolha-15 {
+  -webkit-transform: translate(-10vw, 0px);
+  -ms-transform: translate(-10vw, 0px);
+  transform: translate(-10vw, 0px);
+}
+
+.bolha-wrapper.bolha-16 {
+  -webkit-transform: translate(10vw, 0px);
+  -ms-transform: translate(10vw, 0px);
+  transform: translate(10vw, 0px);
+}
+
+.bolha-wrapper.bolha-17 {
+  -webkit-transform: translate(-5vw, 0px);
+  -ms-transform: translate(-5vw, 0px);
+  transform: translate(-5vw, 0px);
+}
+
+.bolha-wrapper.bolha-18 {
+  -webkit-transform: translate(2vw, 0px);
+  -ms-transform: translate(2vw, 0px);
+  transform: translate(2vw, 0px);
+}
+
 .bolha-wrapper.bolha-21 {
   left: 0%;
   top: 0%;
