@@ -1499,3 +1499,31 @@ a {
   }
 }
 
+@media screen and (max-width: 479px) {
+  #w-node-_2128beca-1431-f231-096a-e8eef6ea6b66-d611d735 {
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  #w-node-_30cede7f-aeee-6725-08af-19a7fd82beba-d611d735 {
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+}
+
