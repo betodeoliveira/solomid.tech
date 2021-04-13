@@ -38,8 +38,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  padding-right: 150px;
-  padding-left: 150px;
+  padding: 100px 150px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -947,7 +946,8 @@ a {
   }
 
   .container {
-    padding: 100px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .container.apresentacao {
