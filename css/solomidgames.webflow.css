@@ -70,27 +70,6 @@ a {
   align-items: flex-start;
 }
 
-.container.centralizado {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .container.navbar {
   min-height: 0px;
   -webkit-box-align: start;
@@ -326,21 +305,6 @@ a {
   transform: translate(2vw, 0px);
 }
 
-.bolha-wrapper.bolha-21 {
-  left: 0%;
-  top: 0%;
-  right: auto;
-  bottom: auto;
-  height: 100%;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-transform: translate(0vw, 0vh);
-  -ms-transform: translate(0vw, 0vh);
-  transform: translate(0vw, 0vh);
-}
-
 .bolha-pop-anim {
   position: absolute;
   z-index: 10;
@@ -370,13 +334,6 @@ a {
   background-color: hsla(0, 0%, 100%, 0);
   background-image: radial-gradient(circle farthest-corner at 50% 50%, transparent 52%, #fff);
   box-shadow: 7px 7px 20px 0 #66f;
-}
-
-.bolha.bolha-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .grid-parceiros {
@@ -561,6 +518,20 @@ a {
   grid-template-rows: auto;
 }
 
+.grid-contatos.contatos-navbar {
+  z-index: 11;
+  margin-top: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .link-contato {
   display: -webkit-box;
   display: -webkit-flex;
@@ -579,8 +550,8 @@ a {
 }
 
 .image-2 {
-  width: 30px;
-  height: 30px;
+  width: 60%;
+  height: 60%;
 }
 
 .navbar {
@@ -594,9 +565,14 @@ a {
 }
 
 .grid-2 {
+  width: 100%;
   padding-top: 25px;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -635,25 +611,6 @@ a {
 .body-mask {
   position: relative;
   overflow: hidden;
-}
-
-.grupo-bolhas-desktop {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  display: none;
-  width: 100%;
-  height: 345px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .maquina-mask {
@@ -699,51 +656,6 @@ a {
 
 .servicos-mobile {
   display: none;
-}
-
-.maquina-bolha-mobile {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  z-index: 11;
-  display: none;
-  width: 100%;
-  height: 500px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.maquina-lottie-anim-mobile {
-  position: relative;
-  z-index: 12;
-  display: block;
-  width: 500px;
-  margin-bottom: -120px;
-  -webkit-filter: saturate(200%) grayscale(100%);
-  filter: saturate(200%) grayscale(100%);
-}
-
-.grupo-bolhas-mobile {
-  position: absolute;
-  left: 0%;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  display: none;
-  width: 100%;
-  height: 345px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .link-email {
@@ -857,39 +769,6 @@ a {
   height: 100%;
 }
 
-.utility-page-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  max-height: 100%;
-  max-width: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.utility-page-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 260px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
 .title-404 {
   margin-bottom: 40px;
   font-size: 70px;
@@ -897,12 +776,6 @@ a {
   font-weight: 800;
   text-align: center;
   text-shadow: 7px 7px 6px #66f;
-}
-
-.title-404.subsections {
-  margin-bottom: 20px;
-  font-size: 45px;
-  line-height: 70px;
 }
 
 .link-parceiros {
@@ -1081,13 +954,16 @@ a {
     margin-left: -200px;
   }
 
+  .grid-2 {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .cto-wrapper {
     margin-top: 40px;
     margin-bottom: 140px;
-  }
-
-  .grupo-bolhas-desktop {
-    display: none;
   }
 
   .grid-dupla-lottie {
@@ -1100,37 +976,6 @@ a {
 
   .servicos-mobile {
     display: block;
-  }
-
-  .maquina-bolha-mobile {
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .grupo-bolhas-mobile {
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-    display: block;
-  }
-
-  .div-block-15 {
-    position: absolute;
-    left: 0%;
-    top: auto;
-    right: 0%;
-    bottom: 0%;
-    width: 100%;
-    height: 16px;
-    padding-right: 0px;
-    padding-bottom: 0px;
   }
 
   .title-404 {
@@ -1223,18 +1068,9 @@ a {
     margin-bottom: -60px;
   }
 
-  .maquina-lottie-anim-mobile {
-    width: 400px;
-  }
-
   .title-404 {
     font-size: 40px;
     line-height: 55px;
-  }
-
-  .title-404.subsections {
-    font-size: 35px;
-    line-height: 60px;
   }
 }
 
@@ -1293,20 +1129,17 @@ a {
     height: auto;
   }
 
+  .link-contato.contatos-navbar {
+    width: 30px;
+    height: 30px;
+  }
+
   .maquina-mask {
     height: 175px;
   }
 
-  .maquina-lottie-anim-mobile {
-    width: 300px;
-  }
-
   .title-404 {
     font-size: 35px;
-    line-height: 50px;
-  }
-
-  .title-404.subsections {
     line-height: 50px;
   }
 
@@ -1315,6 +1148,11 @@ a {
     padding-bottom: 60px;
     padding-left: 0px;
   }
+}
+
+#w-node-_8a2ebb9a-0a0a-d7be-f8c6-6dad86d6266d-d611d735 {
+  -ms-grid-column-align: end;
+  justify-self: end;
 }
 
 #w-node-_2eac50cc-f131-b309-c790-3b789e955895-d611d735 {
