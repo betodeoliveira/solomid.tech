@@ -823,6 +823,15 @@ a {
   display: none;
 }
 
+.badge-webflow {
+  position: fixed;
+  left: auto;
+  top: auto;
+  right: 12px;
+  bottom: 50px;
+  z-index: 11;
+}
+
 @media screen and (min-width: 1280px) {
   .slider {
     height: 700px;
