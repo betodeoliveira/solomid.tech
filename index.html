@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Jun 29 2021 18:13:50 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Jun 29 2021 18:27:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60746b83c99c986fd611d735" data-wf-site="6064869edf5ebfd8b6d1d30e">
 <head>
   <meta charset="utf-8">
@@ -48,6 +48,17 @@ background:rgb(255, 166, 48);
     Weglot.initialize({
         api_key: 'wg_09bdd475736ce0903aeca9af8fbe99b36'
     });
+</script>
+  <script>
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+if (urlParams.has('en.solomid.tech')) {
+  var ptbr = document.getElementById("typewritter-ptbr");
+  var en = document.getElementById("typewritter-en");
+  ptbr.style.display = "none";
+  en.style.display = "block";
+}
 </script>
 </head>
 <body>
@@ -206,7 +217,8 @@ background:rgb(255, 166, 48);
     </div>
     <div class="section">
       <div class="container apresentacao">
-        <div class="title-section">Desenvolvemos soluções<br>digitais <span udesly-typewriter="que agregam valor.|com design e tecnologia.|que conectam pessoas.|encantadoras.|que inspiram.|personalizadas.|que transformam." color="#ffffff" writing="100" deleting="200" class="tipewritter-anim">criativas.</span></div>
+        <div id="typewritter-ptbr" class="title-section ptbr">Desenvolvemos soluções<br>digitais <span udesly-typewriter="que agregam valor.|com design e tecnologia.|que conectam pessoas.|encantadoras.|que inspiram.|personalizadas.|que transformam." color="#ffffff" writing="100" deleting="200" class="typewritter-anim">criativas.</span></div>
+        <div id="typewritter-en" class="title-section en">Desenvolvemos soluções<br>digitais <span udesly-typewriter="with design and technology.|that connects people.|personalized to your business.|that makes difference." color="#ffffff" writing="100" deleting="200" class="typewritter-anim">criativas.</span></div>
       </div>
     </div>
     <div class="section sobre">
