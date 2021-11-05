@@ -18,6 +18,28 @@ body {
   line-height: 1.6;
 }
 
+h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 45px;
+  line-height: 70px;
+  font-weight: 800;
+  text-shadow: 7px 7px 6px #66f;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 60px;
+  font-weight: 700;
+  text-shadow: 7px 7px 6px #66f;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -87,6 +109,17 @@ a {
 
 .container.navbar {
   min-height: 0px;
+}
+
+.container.is-termos {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .title-section {
@@ -1271,6 +1304,11 @@ a {
   align-self: center;
   -ms-grid-column-align: center;
   justify-self: center;
+}
+
+#w-node-_62283ded-176f-7bdf-47f5-1f79a34ba753-73a0b9c8 {
+  -ms-grid-column-align: end;
+  justify-self: end;
 }
 
 @media screen and (max-width: 991px) {
