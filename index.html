@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Nov 05 2021 16:19:40 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Nov 09 2021 20:20:18 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60746b83c99c986fd611d735" data-wf-site="6064869edf5ebfd8b6d1d30e">
 <head>
   <meta charset="utf-8">
@@ -39,6 +39,10 @@ background:rgb(102, 102, 255);
 ::-webkit-scrollbar-thumb {
 background:rgb(255, 166, 48);
 }
+/*Troca a cor da bullet da lista*/
+li::marker {
+  color: #6666ff;
+}
 </style>
   <!--  Weglot  -->
   <link rel="alternate" hreflang="pt" href="https://www.solomid.tech">
@@ -48,7 +52,8 @@ background:rgb(255, 166, 48);
     Weglot.initialize({
         api_key: 'wg_09bdd475736ce0903aeca9af8fbe99b36'
     });
-</script>
+</script><!--  [Attributes by Finsweet] Mirror click events  -->
+  <script defer="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-mirrorclick@1/mirrorclick.js"></script>
 </head>
 <body>
   <div class="body-mask">
@@ -195,7 +200,7 @@ background:rgb(255, 166, 48);
     <div class="navbar wf-section">
       <div class="container navbar">
         <div class="w-layout-grid grid-2">
-          <a href="index.html" aria-current="page" class="logo-link w-inline-block w--current"><img src="images/logo-temp-sm-tech.png" loading="lazy" sizes="100vw" srcset="images/logo-temp-sm-tech-p-500.png 500w, images/logo-temp-sm-tech.png 782w" alt="Link, imagem, solomid.tech"></a>
+          <a href="index.html" aria-current="page" class="logo-link w-inline-block w--current"><img src="images/logo-temp-sm-tech.png" loading="lazy" sizes="75px" srcset="images/logo-temp-sm-tech-p-500.png 500w, images/logo-temp-sm-tech.png 782w" alt="Link, imagem, solomid.tech"></a>
           <div id="w-node-_8a2ebb9a-0a0a-d7be-f8c6-6dad86d6266d-d611d735" class="w-layout-grid grid-contatos contatos-navbar">
             <a href="https://wa.me/message/DRI7IAIVEGAXO1" target="_blank" class="link-contato contatos-navbar w-inline-block"><img src="images/logo-whatsapp.svg" loading="lazy" alt="Conversar por WhatsApp" class="image-2"></a>
             <a href="https://www.instagram.com/solomid.tech/" target="_blank" class="link-contato contatos-navbar w-inline-block"><img src="images/logo-instagram.svg" loading="lazy" alt="Acessar Instagram" class="image-2"></a>
@@ -212,7 +217,7 @@ background:rgb(255, 166, 48);
     </div>
     <div class="section sobre wf-section">
       <div class="container">
-        <div class="grid-dupla-lottie">
+        <div data-w-id="cab1f9e3-2e97-5179-5ff9-9351bb5076d1" style="opacity:0" class="grid-dupla-lottie">
           <div>
             <div class="title-section subsections">Trabalhamos para simplificar o digital.</div>
             <div>Nossa especialidade está no desenvolvimento de sites utilizando a plataforma webflow. Desenvolvemos sites com layouts personalizados e de todos os tamanhos, indo de lading pages até sites com estruturas complexas. </div>
@@ -227,10 +232,10 @@ background:rgb(255, 166, 48);
     </div>
     <div class="section wf-section">
       <div class="container">
-        <div data-delay="4000" data-animation="slide" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div data-delay="4000" data-animation="cross" class="slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="w-slider-mask">
             <div class="w-slide">
-              <div class="grid-dupla-lottie">
+              <div data-w-id="54316314-4382-c0db-a240-6864e95df9a5" style="opacity:0" class="grid-dupla-lottie">
                 <div>
                   <div class="title-section subsections">Sites em webflow.</div>
                   <p><span class="destaque-paragrafo">Seu site em suas mãos.</span> Tenha um site com um dos sistemas mais modernos de gerenciamento de conteúdo, sem necessidade de acessar um painel administrativo confuso e cheio de informações desnecessárias para você.<br><br><span class="destaque-paragrafo">Diga adeus aos templates.</span> Seu site terá um layout personalizado para as suas necessidades e otimizado para diversos formatos de tela.<br><br><span class="destaque-paragrafo">Apareça nas buscas.</span> Tenha um site com SEO otimizado para que seu negócio comece a aparecer nas buscas orgânicas.</p>
@@ -265,15 +270,15 @@ background:rgb(255, 166, 48);
               </div>
             </div>
           </div>
-          <div class="left-arrow w-slider-arrow-left">
+          <div data-w-id="afa8786e-bbd6-fddd-a734-49bea9bff04a" class="left-arrow w-slider-arrow-left">
             <div class="button arrow-slider w-icon-slider-left"></div>
           </div>
           <div class="right-arrow w-slider-arrow-right">
-            <div class="button arrow-slider w-icon-slider-right"></div>
+            <div data-w-id="afa8786e-bbd6-fddd-a734-49bea9bff04d" class="button arrow-slider w-icon-slider-right"></div>
           </div>
           <div class="w-slider-nav w-round"></div>
           <div class="cto-wrapper">
-            <a href="#section-contato" class="button w-inline-block">
+            <a href="#section-contato" data-w-id="23918335-0bbe-1a9e-b5e9-6830853dc569" class="button w-inline-block">
               <div>Envie sua mensagem</div>
             </a>
           </div>
@@ -328,72 +333,482 @@ background:rgb(255, 166, 48);
     </div>
     <div class="section wf-section">
       <div class="container">
-        <div class="section-title-wrapper">
-          <div class="title-section subsections">Alguns trabalhos</div>
+        <div data-w-id="c84901da-45a7-efd1-fab7-76ca5d05ff63" style="opacity:0">
+          <div class="section-title-wrapper">
+            <div class="title-section subsections">Alguns trabalhos</div>
+          </div>
         </div>
-        <div data-delay="4000" data-animation="slide" class="slider projetos w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+        <div data-delay="4000" data-animation="fade" class="slider projetos w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
           <div class="w-slider-mask">
             <div class="w-slide">
-              <a href="https://www.grupomstp.com/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-grupo-mstp.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-grupo-mstp-p-800.jpeg 800w, images/foto-grupo-mstp-p-1080.jpeg 1080w, images/foto-grupo-mstp-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.goonoutdoor.run/" target="_blank" class="browser_url w-inline-block">
+                    <div>goonoutdoor.run</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.goonoutdoor.run/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-go-on-outdoor.jpg" loading="lazy" alt="" class="browser_img-desktop"><img src="images/foto-go-on-outdoor-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-go-on-outdoor-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Integração com ferramenta de filtro;</li>
+                          <li>Integração com Zapier.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.dxainvest.com/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-dxa-invest.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-dxa-invest-p-800.jpeg 800w, images/foto-dxa-invest-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://prime.luz.vc/" target="_blank" class="browser_url w-inline-block">
+                    <div>prime.luz.vc</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://prime.luz.vc/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-prime-luz.jpg" loading="lazy" alt="" class="browser_img-desktop"><img src="images/foto-prime-luz-mobile.jpg" loading="lazy" alt="" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação do site com layout fornecido pelo cliente;</li>
+                          <li>Integração com ferramenta de filtro;</li>
+                          <li>Integração com Gateway de pagamento.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.e-eid.com/psicologia" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-escola-eid-psicologia.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site da Escola EID Psicologia." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-escola-eid-psicologia-p-800.jpeg 800w, images/foto-escola-eid-psicologia-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://grupomstp.com/" target="_blank" class="browser_url w-inline-block">
+                    <div>grupomstp.com</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://grupomstp.com/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-grupo-mstp.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-grupo-mstp-p-800.jpeg 800w, images/foto-grupo-mstp-p-1080.jpeg 1080w, images/foto-grupo-mstp-p-1600.jpeg 1600w" class="browser_img-desktop"><img src="images/foto-grupo-mstp-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-grupo-mstp-mobile-p-500.jpeg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Atualização do layout visual da marca;</li>
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Site com gerador de imagens para redes sociais.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.figurate.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-figurate.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Figurate." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-figurate-p-500.jpeg 500w, images/foto-figurate-p-800.jpeg 800w, images/foto-figurate-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.dxainvest.com/" target="_blank" class="browser_url w-inline-block">
+                    <div>dxainvest.com</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.dxainvest.com/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-dxa-invest.jpg" loading="lazy" alt="" class="browser_img-desktop"><img src="images/foto-dxa-invest-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-dxa-invest-mobile-p-500.jpeg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Integração do site com a ferramenta <a href="https://weglot.com/" target="_blank">Weglot</a> para oferecer outros idiomas.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.whsadvogados.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-whs-advogados.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site WHS Advogados." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-whs-advogados-p-800.jpeg 800w, images/foto-whs-advogados-p-1080.jpeg 1080w, images/foto-whs-advogados-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://psicologia.e-eid.com/" target="_blank" class="browser_url w-inline-block">
+                    <div>psicologia.e-eid.com</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://psicologia.e-eid.com/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-escola-eid-psicologia.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site da Escola EID Psicologia." class="browser_img-desktop"><img src="images/foto-escola-eid-psicologia-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-escola-eid-psicologia-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Serviço de hospedagem especial para sites criados em webflow mas hospedados fora da plataforma.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.homemdrink.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-homem-drink.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Homem Drink." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-homem-drink-p-500.jpeg 500w, images/foto-homem-drink-p-800.jpeg 800w, images/foto-homem-drink-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.figurate.com.br/" target="_blank" class="browser_url w-inline-block">
+                    <div>psicologia.e-eid.com</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.figurate.com.br/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-figurate.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Figurate." class="browser_img-desktop"><img src="images/foto-figurate-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-figurate-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Integração com Zapier.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.easyconsultoriatributaria.com/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-easy-consultoria.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Easy Consultoria." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-easy-consultoria-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.whsadvogados.com.br/" target="_blank" class="browser_url w-inline-block">
+                    <div>whsadvogados.com.br</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.whsadvogados.com.br/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-whs-advogados.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site WHS Advogados." class="browser_img-desktop"><img src="images/foto-whs-advogados-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-whs-advogados-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação da identidade visual;</li>
+                          <li>Criação de site com layout personalizado.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.e-eid.com/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-escola-eid.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site da Escola Internacional de Desenvolvimento." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-escola-eid-p-500.jpeg 500w, images/foto-escola-eid-p-800.jpeg 800w, images/foto-escola-eid-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.easyconsultoriatributaria.com/" target="_blank" class="browser_url w-inline-block">
+                    <div>easyconsultoriatributaria.com</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.easyconsultoriatributaria.com/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-easy-consultoria.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Easy Consultoria." class="browser_img-desktop"><img src="images/foto-easy-consultoria-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-easy-consultoria-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Serviço de hospedagem especial para sites criados em webflow mas hospedados fora da plataforma.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.koppeconsultoria.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-koppe-consultoria.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Koppe Consultoria." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-koppe-consultoria-p-800.jpeg 800w, images/foto-koppe-consultoria-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.e-eid.com/" target="_blank" class="browser_url w-inline-block">
+                    <div>escolaeid.com.br</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.e-eid.com/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-escola-eid.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site da Escola Internacional de Desenvolvimento." class="browser_img-desktop"><img src="images/foto-escola-eid-mobile.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 90vw, (max-width: 1279px) 77vw, (max-width: 1919px) 79vw, 1300px" srcset="images/foto-escola-eid-mobile.jpg 500w" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Integração com ferramenta de filtro.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="w-slide">
-              <a href="https://www.incarparana.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-incar-parana.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Incar Paraná." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-incar-parana-p-800.jpeg 800w, images/foto-incar-parana-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
-            </div>
-            <div class="w-slide">
-              <a href="https://www.mundialimentacao.com.br/" target="_blank" class="link-projeto w-inline-block"><img src="images/foto-mundi-alimentacao.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Mundi Alimentação." sizes="(max-width: 479px) 96vw, (max-width: 767px) 95vw, (max-width: 991px) 90vw, (max-width: 1279px) 69vw, (max-width: 1919px) 71vw, 1170px" srcset="images/foto-mundi-alimentacao-p-800.jpeg 800w, images/foto-mundi-alimentacao-p-1080.jpeg 1080w, images/foto-mundi-alimentacao-p-1600.jpeg 1600w" class="img-projeto">
-                <div class="projeto-hover-text">clique e conheça</div>
-              </a>
+              <div class="browser-wrapper">
+                <div class="browser-nav">
+                  <div class="broswer_btn-grid">
+                    <a fs-mirrorclick-element="trigger-2" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">item anterior</div>
+                    </a>
+                    <a fs-mirrorclick-element="trigger-1" href="#" class="broswer_btn is-slider-btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">próximo item</div>
+                    </a>
+                  </div>
+                  <a href="https://www.homemdrink.com.br/" target="_blank" class="browser_url w-inline-block">
+                    <div>homemdrink.com.br</div>
+                  </a>
+                  <div class="broswer_btn-grid is-3">
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c0" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver informações</div>
+                    </a>
+                    <a data-w-id="64831758-3467-55f3-2d38-e2b925bcb2c3" href="#" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">ver imagem</div>
+                    </a>
+                    <a href="https://www.homemdrink.com.br/" target="_blank" class="broswer_btn w-inline-block">
+                      <div></div>
+                      <div class="browser_hide-btn-label">acessar site</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="broswer_info-wrapper"><img src="images/foto-homem-drink.jpg" loading="lazy" alt="Link, imagem, Screenshot da página inicial do site Homem Drink." class="browser_img-desktop"><img src="images/foto-homem-drink-mobile.jpg" loading="lazy" alt="" class="browser_img-mobile">
+                  <div class="browser_info">
+                    <div class="browser_info-text-wrapper">
+                      <h3 class="browser_info-title">Principais Serviços</h3>
+                      <div class="broswer_info-rich-text w-richtext">
+                        <ul role="list">
+                          <li>Criação de site com layout personalizado;</li>
+                          <li>Serviço de hospedagem especial para sites criados em webflow mas hospedados fora da plataforma.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="left-arrow w-slider-arrow-left">
+          <div fs-mirrorclick-element="target-2" class="left-arrow is-hide w-slider-arrow-left">
             <div class="button arrow-slider w-icon-slider-left"></div>
           </div>
-          <div class="right-arrow w-slider-arrow-right">
-            <div class="button arrow-slider w-icon-slider-right"></div>
+          <div fs-mirrorclick-element="target-1" class="right-arrow is-hide w-slider-arrow-right">
+            <div data-w-id="27fb904b-22f0-58e5-4b13-6a84df6114d5" class="button arrow-slider w-icon-slider-right"></div>
           </div>
           <div class="slide-nav w-slider-nav w-round"></div>
         </div>
@@ -401,7 +816,7 @@ background:rgb(255, 166, 48);
     </div>
     <div id="section-contato" class="section contato wf-section">
       <div class="container contato">
-        <div class="div-block-12">
+        <div data-w-id="e6800f96-65ce-69f1-1110-e6ad281cc76d" style="opacity:0" class="div-block-12">
           <div class="title-section subsections">Vamos trabalhar juntos</div>
           <div class="div-block-13">
             <a href="mailto:contato@solomid.tech" class="link-email">contato@solomid.tech</a>
