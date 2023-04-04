@@ -24,11 +24,9 @@ Webflow.push(function () {
 $(".form_input.is-select-input").each(function (index) {
     $(this).change(function () {
         if ($(this).val().length <= 0) {
-            console.log("Disable");
-            $(this).css("color", "##a0a0a0");
+            $(this).css("color", "#a0a0a0");
         }
         else {
-            console.log("Enable");
             $(this).css("color", "#686976");
         }
     });
