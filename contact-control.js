@@ -20,14 +20,15 @@ Webflow.push(function () {
     }
 });
 
-
-$(".form_input.is-select-input").each(function (index) {
-    $(this).change(function () {
-        if ($(this).val().length <= 0) {
-            $(this).css("selectedColor", "#a0a0a0");
-        }
-        else {
-            $(this).css("selectedColor", "#686976");
-        }
+document.addEventListener("DOMContentLoaded", function (e) {
+    $(".form_input.is-select-input").each(function (index) {
+        $(this).change(function () {
+            if ($(this).val().length <= 0) {
+                $(this).css("selectedColor", "#a0a0a0");
+            }
+            else {
+                $(this).css("selectedColor", "#686976");
+            }
+        });
     });
 });
