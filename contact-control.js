@@ -24,10 +24,10 @@ Webflow.push(function () {
 $(".form_input.is-select-input").each(function (index) {
     $(this).change(function () {
         if ($(this).val().length <= 0) {
-            $(this).css("color", "#a0a0a0");
+            $(this).css("selectedColor", "#a0a0a0");
         }
         else {
-            $(this).css("color", "#686976");
+            $(this).css("selectedColor", "#686976");
         }
     });
 });
