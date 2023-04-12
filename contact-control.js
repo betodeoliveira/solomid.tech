@@ -21,14 +21,24 @@ Webflow.push(function () {
 });
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    $(".form_input.is-select-input").each(function (index) {
+    // Get all elements that has the "attr-select-field" attribute
+    $("[attr-select-field]").each(function (index) {
+        // Get the current color
+        let selectedColor = $(this).css("color");
+        // Get the placeholder color
+        let placeholderselectedColor = $(this).attr("attr-select-field");
+        // Update the current color to match the placeholder color
+        $(this).css("color", placeholderselectedColor);
+        // Verify whenever the select value changes
         $(this).change(function () {
+            // If the value is empty set the color to be he pleceholder color
             if ($(this).val().length <= 0) {
-                $(this).css("selectedColor", "#a0a0a0");
+                $(this).css("color", placeholderselectedColor);
             }
+            // If the value isn't empty the color should be the selected color
             else {
-                $(this).css("selectedColor", "#686976");
+                $(this).css("color", selectedColor);
             }
         });
     });
-});
+ });
