@@ -1,3 +1,6 @@
+/*
+SCRIPT DISABLED
+*/
 document.addEventListener("DOMContentLoaded", function (e) {
     function checkBreakpoint(x) {
         if (x.matches) {
